@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-//@CrossOrigin(origins = "http://localhost:4200")
 
 @CrossOrigin(origins = "https://portfolio-lara.web.app")
 @RestController
@@ -26,7 +25,6 @@ public class UsuarioController {
 //    }
     
     @CrossOrigin(origins = "https://portfolio-lara.web.app")
-//    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/iniciar-sesion")
     public Boolean iniciarSesion(@RequestBody Usuario user){
         return userServ.IniciarSesion(user);
